@@ -8,12 +8,12 @@ const assertEqual = function(actual, expected) {
 
 const tail = function(array) {
   if (array.length === 0 || array.length === 1) {
-    return []
+    return [];
   }
 
   return array.slice(-(array.length - 1));
 
-}
+};
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words); // no need to capture the return value since we are not checking it
